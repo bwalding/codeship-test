@@ -1,9 +1,3 @@
-FROM ubuntu:zesty
+FROM alpine
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
-
-COPY . .
-
-CMD ["printenv"]
-
+RUN apk add curl

@@ -1,0 +1,14 @@
+- name: env
+  tag: master
+  service: codeship_example
+  command: env
+
+- name: metadata-public-ipv4
+  tag: master
+  service: codeship_example
+  command: curl http://169.254.169.254/latest/meta-data/public-ipv4
+
+- name: metadata-local-ipv4
+  tag: master
+  service: codeship_example
+  command: curl http://169.254.169.254/latest/meta-data/local-ipv4
